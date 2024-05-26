@@ -116,7 +116,7 @@ def direct_link_generator(link: str):
 		return wetransfer(link)
 	elif any(x in domain for x in anonfilesBaseSites):
 		return anonfilesBased(link)
-	elif any(x in domain for x in ['terabox', 'nephobox', '4funbox', 'mirrobox', 'momerybox', 'teraboxapp']):
+	elif any(x in domain for x in ['terabox', '1024terabox', 'nephobox', '4funbox', 'mirrobox', 'momerybox', 'teraboxapp']):
 		return terabox(link)
 	elif any(x in domain for x in fmed_list):
 		return fembed(link)
