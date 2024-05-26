@@ -113,8 +113,8 @@ def loopthread(message,otherss=False):
 def send_start(client: pyrogram.client.Client, message: pyrogram.types.messages_and_media.message.Message):
     app.send_message(message.chat.id, f"__👋 Hi **{message.from_user.mention}**, i am Terabox Link Bypasser Bot, just send me any supported links and i will you get you results.\nCheckout /help to Read More__",
     reply_markup=InlineKeyboardMarkup([
-        [ InlineKeyboardButton("🌐 Source Code", url="https://github.com/youesky/TeraboxedBot")],
-        [ InlineKeyboardButton("Updates", url="https://t.me/Teraboxed") ]]), 
+        [ InlineKeyboardButton("🌐 Source Code", url="https://t.me/ultroidxTeam")],
+        [ InlineKeyboardButton("Updates", url="https://t.me/ultroid_official") ]]), 
         reply_to_message_id=message.id)
 
 
@@ -158,5 +158,5 @@ def docfile(client: pyrogram.client.Client, message: pyrogram.types.messages_and
 
 
 # server loop
-print("Bot Starting")
+print("Bot Starting...")
 app.run()
